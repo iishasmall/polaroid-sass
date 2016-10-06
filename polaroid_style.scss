@@ -1,0 +1,63 @@
+
+/* Polaroid style photos */
+/*  implement like this in the html e.g
+
+	<div id="miso-photo" class="polaroid-style polaroid-rotate-right">	
+			 <img src="img/miso-soup.jpg">
+			 <span>Miso Soup</span>
+	</div>
+
+*/
+
+  @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+
+ .polaroid-style{
+ 	display: inline-block;
+  	width:300px;
+  	height:250px;
+  	background:white;
+  	border: 1px solid rgba(0,0,0,.10);
+  	-webkit-box-shadow: 6px 10px 31px -5px rgba(0,0,0,0.22);
+	-moz-box-shadow: 6px 10px 31px -5px rgba(0,0,0,0.22);
+	box-shadow: 6px 10px 31px -5px rgba(0,0,0,0.22);
+
+
+	img {
+
+		width:270px;
+		height:197px;
+		border: 1px solid rgba(0,0,0,.25);
+		margin: 11px 15px 8px 8px;
+		
+	}
+
+	span{
+
+		display:block;
+		font-family: 'Reenie Beanie', sans-serif;
+		font-size:1.7em;
+		text-align:center;
+	}
+
+	
+
+  }
+
+
+  .polaroid-rotate-right{
+
+  		transform: rotate(2deg) ;
+		-webkit-transform: rotate(2deg) ;
+		-moz-transform: rotate(2deg) ;
+		-o-transform: rotate(2deg) ;
+		-ms-transform: rotate(2deg) ;
+  }
+
+.polaroid-rotate-left{
+
+	 transform: rotate(358deg) ;
+	-webkit-transform: rotate(358deg) ;
+	-moz-transform: rotate(358deg) ;
+	-o-transform: rotate(358deg) ;
+	-ms-transform: rotate(358deg) ;
+}
